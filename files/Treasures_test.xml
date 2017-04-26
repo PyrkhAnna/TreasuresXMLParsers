@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treasures>
+	<stick id="151">
+		<title>Bo</title>
+		<length>1.8</length>
+		<type>Battle_staff</type>
+		<tip>Wood</tip>
+		<price>166.7</price>
+	</stick>
+	<stick id="152">
+		<title>Jo</title>
+		<length>1.28</length>
+		<type>Battle_staff</type>
+		<tip>Wood</tip>
+		<price>111.5</price>
+	</stick>
+	<stick id="153">
+		<title>Kanabo</title>
+		<length>1.41</length>
+		<type>Battle_club</type>
+		<tip>Steel</tip>
+		<price>177.5</price>
+	</stick>
+	<bow id="181">
+		<title>English bow</title>
+		<type>Long bow</type>
+		<size>0.75</size>
+		<arrow_type>traditional</arrow_type>
+		<arrow_count>30</arrow_count>
+		<damage>15</damage>
+		<price>500</price>
+	</bow>
+	<bow id="182">
+		<title>Russian bow</title>
+		<type>Short bow</type>
+		<size>0.4</size>
+		<arrow_type>modern</arrow_type>
+		<arrow_count>50</arrow_count>
+		<damage>10</damage>
+		<price>450</price>
+	</bow>
+	<bow id="183">
+		<title>German bow</title>
+		<type>Composite bow</type>
+		<size>0.7</size>
+		<arrow_type>long</arrow_type>
+		<arrow_count>20</arrow_count>
+		<damage>20</damage>
+		<price>800</price>
+	</bow>
+	<jewel id="11">
+		<type>Precious stone</type>
+		<material>Diamond</material>
+		<diameter>1.2</diameter>
+		<weight>0.015</weight>
+		<price>324.57</price>
+	</jewel>
+	<jewel id="12">
+		<type>Precious stone</type>
+		<material>Ruby</material>
+		<diameter>5.1</diameter>
+		<weight>0.051</weight>
+		<price>117</price>
+	</jewel>
+	<jewel id="13">
+		<type>Halfprecious stone</type>
+		<material>Opal</material>
+		<diameter>35.4</diameter>
+		<weight>0.156</weight>
+		<price>257.3</price>
+	</jewel>
+	<ring id="21">
+		<material>Gold</material>
+		<weight>2.7</weight>
+		<style>Classic</style>
+		<hasPreciousStone>TRUE</hasPreciousStone>
+		<price>751</price>
+	</ring>
+	<ring id="22">
+		<material>Platinum</material>
+		<weight>6.1</weight>
+		<style>Vintage</style>
+		<hasPreciousStone>FALSE</hasPreciousStone>
+		<price>1024.33</price>
+	</ring>
+	<ring id="23">
+		<material>Silver</material>
+		<weight>5.34</weight>
+		<style>Vintage</style>
+		<hasPreciousStone>FALSE</hasPreciousStone>
+		<price>99.99</price>
+	</ring>
+	<princess id="321">
+		<name>Fa Mulan</name>
+		<age>18</age>
+		<damnation>FALSE</damnation>
+		<birthplace>China</birthplace>
+	</princess>
+	<princess id="322">
+		<name>Aurora</name>
+		<age>16</age>
+		<damnation>TRUE</damnation>
+		<birthplace>France</birthplace>
+	</princess>
+	<princess id="323">
+		<name>Fiona</name>
+		<age>16</age>
+		<damnation>TRUE</damnation>
+		<birthplace>Faraway Kingdom</birthplace>
+	</princess>
+</treasures>
