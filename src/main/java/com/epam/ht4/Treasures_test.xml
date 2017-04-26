@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treasures>	
+
+	<axe id = "171">
+		<title>powerful</title>
+		<type>warrior</type>
+		<type_handle>single</type_handle>
+		<type_blade>double</type_blade>
+		<damage>70</damage>
+		<price>1000</price>
+	</axe>
+	<axe id = "172">
+		<title>firewood</title>
+		<type>simple</type>
+		<type_handle>double</type_handle>
+		<type_blade>single</type_blade>
+		<damage>60</damage>
+		<price>800</price>
+	</axe>
+	<axe id = "173">
+		<title>battle</title>
+		<type>simple</type>
+		<type_handle>soldier</type_handle>
+		<type_blade>single</type_blade>
+		<damage>20</damage>
+		<price>300</price>
+	</axe>
+
+	<bow id = "181">
+		<title>English bow</title>
+		<type>Long bow</type>
+		<size>0.75</size>
+		<arrow_type>traditional</arrow_type>
+		<arrow_count>30</arrow_count>
+		<damage>15</damage>
+		<price>500</price>
+	</bow>
+	<bow id = "182">
+		<title>Russian bow</title>
+		<type>Short bow</type>
+		<size>0.4</size>
+		<arrow_type>modern</arrow_type>
+		<arrow_count>50</arrow_count>
+		<damage>10</damage>
+		<price>450</price>
+	</bow>
+	<bow id = "183">
+		<title>German bow</title>
+		<type>Composite bow</type>
+		<size>0.7</size>
+		<arrow_type>long</arrow_type>
+		<arrow_count>20</arrow_count>
+		<damage>20</damage>
+		<price>800</price>
+	</bow>
+
+	<helmet id = "191">
+		<title>Attic</title>
+		<type>ancient helmet</type>
+		<material>steel</material>
+		<head_protection>50</head_protection>
+		<head_circumference>40</head_circumference>
+		<price>500</price>
+	</helmet>
+	<helmet id = "192">
+		<title>M1</title>
+		<type>world war helmet</type>
+		<material>steel</material>
+		<head_protection>100</head_protection>
+		<head_circumference>42</head_circumference>
+		<price>200</price>
+	</helmet>
+	<helmet id = "193">
+		<title>Bell</title>
+		<type>bike helmet</type>
+		<material>polyurethane</material>
+		<head_protection>20</head_protection>
+		<head_circumference>38</head_circumference>
+		<price>100</price>
+	</helmet> 
+	
+	<ancient_scroll id="251">
+		<title>Golden fix</title>
+		<age>23</age>
+		<content>The basic rules to get the money and gold</content>
+		<school_of_magic>Fire magic school</school_of_magic>
+		<price>12</price>
+	</ancient_scroll>
+	<ancient_scroll id="252">
+		<title>Basic rules</title>
+		<age>23</age>
+		<content>One of the best scroll</content>
+		<school_of_magic>Water magic school</school_of_magic>
+		<price>18</price>
+	</ancient_scroll>
+	<ancient_scroll id="253">
+		<title>Scroll of magic things</title>
+		<age>96</age>
+		<content>You have to read this scroll because of some interesting things</content>
+		<school_of_magic>Water magic school</school_of_magic>
+		<price>28</price>
+	</ancient_scroll>
+</treasures>
