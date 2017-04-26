@@ -7,7 +7,7 @@ import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import com.epam.ht4.bean.Treasure;
-import com.epam.ht4.dao.TreasureFactory;
+import com.epam.ht4.dao.factory.TreasureFactory;
 
 public class TreasureStAXParser {
 	private List<Treasure> treasures;

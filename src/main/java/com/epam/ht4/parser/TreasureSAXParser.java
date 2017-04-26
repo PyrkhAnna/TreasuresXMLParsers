@@ -7,7 +7,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 import com.epam.ht4.bean.Treasure;
-import com.epam.ht4.dao.TreasureFactory;
+import com.epam.ht4.dao.factory.TreasureFactory;
 
 public class TreasureSAXParser extends DefaultHandler {
 	private List<Treasure> treasures;
