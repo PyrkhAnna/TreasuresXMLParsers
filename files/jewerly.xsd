@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.epam.com/ht4/treasure/jewerly"
+	xmlns:tns="http://www.epam.com/ht4/treasure/jewerly" elementFormDefault="qualified" attributeFormDefault="qualified">
+	
+	<xs:complexType name="jewerliesType">
+		<xs:sequence>
+			<xs:element name="jewel" type="tns:jewerlyJewel" maxOccurs="unbounded" />
+			<xs:element name="ring" type="tns:jewerlyRing" maxOccurs="unbounded" />
+			<xs:element name="bracelet" type="tns:jewerlyBracelet" maxOccurs="unbounded" />
+			<xs:element name="chain" type="tns:jewerlyChain" maxOccurs="unbounded" />
+			<xs:element name="beads" type="tns:jewerlyBeads" maxOccurs="unbounded" />
+			<xs:element name="coulomb" type="tns:jewerlyCoulomb" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="jewerlyType">
+		<xs:sequence>
+			<xs:element name="material" type="xs:string" />
+			<xs:element name="weight" type="xs:string" />
+			<xs:element name="price" type="xs:double" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required" />
+	</xs:complexType>
+	<xs:complexType name="jewerlyJewel">
+		<xs:complexContent>
+			<xs:extension base="tns:jewerlyType">
+				<xs:sequence>
+					<xs:element name="type" type="xs:string" />
+					<xs:element name="diameter" type="xs:double" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="jewerlyRing">
+		<xs:complexContent>
+			<xs:extension base="tns:jewerlyType">
+				<xs:sequence>
+					<xs:element name="style" type="xs:string" />
+					<xs:element name="hasPreciousStone" type="xs:boolean" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="jewerlyBracelet">
+		<xs:complexContent>
+			<xs:extension base="tns:jewerlyType">
+				<xs:sequence>
+					<xs:element name="style" type="xs:string" />
+					<xs:element name="girth" type="xs:double" />
+					<xs:element name="hardness" type="xs:string" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="jewerlyChain">
+		<xs:complexContent>
+			<xs:extension base="tns:jewerlyType">
+				<xs:sequence>
+					<xs:element name="length" type="xs:double" />
+					<xs:element name="thickness" type="xs:double" />
+					<xs:element name="type_of_lock" type="xs:string" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="jewerlyBeads">
+		<xs:complexContent>
+			<xs:extension base="tns:jewerlyType">
+				<xs:sequence>
+					<xs:element name="length" type="xs:double" />
+					<xs:element name="thickness" type="xs:double" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="jewerlyCoulomb">
+		<xs:complexContent>
+			<xs:extension base="tns:jewerlyType">
+				<xs:sequence>
+					<xs:element name="size" type="xs:double" />
+					<xs:element name="form" type="xs:string" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

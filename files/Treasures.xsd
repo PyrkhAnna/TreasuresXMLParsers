@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.epam.com/ht4/treasure/Treasures"
+	xmlns:tns="http://www.epam.com/ht4/treasure/Treasures" 
+	
+	xmlns:jw="http://www.com.epam/trjava/treasures/jewerly"
+	xmlns:st="http://www.com.epam/trjava/treasures/stuff"
+	xmlns:wp="http://www.com.epam/trjava/treasures/weapon"
+	xmlns:art="http://www.epam.com/ht4/treasure/art"
+	xmlns:cl="http://www.epam.com/ht4/treasure/clothing"
+	xmlns:mg="http://www.epam.com/ht4/treasure/magic"
+	xmlns:pr="http://www.epam.com/ht4/treasure/princess"
+	
+	elementFormDefault="qualified" attributeFormDefault="qualified">
+	
+	<xs:import namespace="http://www.epam.com/ht4/treasure/jewerly" schemaLocation="jewerly.xsd" />
+	<xs:import namespace="http://www.epam.com/ht4/treasure/stuff" schemaLocation="stuff.xsd" />
+	<xs:import namespace="http://www.epam.com/ht4/treasure/weapon" schemaLocation="weapon.xsd" />
+	<xs:import namespace="http://www.epam.com/ht4/treasure/art" schemaLocation="art.xsd" />
+	<xs:import namespace="http://www.epam.com/ht4/treasure/clothing" schemaLocation="clothing.xsd" />
+	<xs:import namespace="http://www.epam.com/ht4/treasure/magic" schemaLocation="magic.xsd" />
+	<xs:import namespace="http://www.epam.com/ht4/treasure/princess" schemaLocation="princess.xsd" />
+	
+	
+	<xs:complexType name="treasuresType">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="jw" type="jewerliesType"></xs:element>
+			<xs:element name="st" type="stuffsType"></xs:element>
+			<xs:element name="wp" type="weaponsType"></xs:element>
+			<xs:element name="art" type="art:artsType"></xs:element>
+			<xs:element name="cl" type="cl:clothingsType"></xs:element>
+			<xs:element name="mg" type="mg:magicsType"></xs:element>
+			<xs:element name="pr" type="pr:princessesType"></xs:element>
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:element name="treasures" type="tns:treasuresType"></xs:element>
+	
+		
+</xs:schema>

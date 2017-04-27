@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.epam.com/ht4/treasure/weapon"
+	xmlns:tns="http://www.epam.com/ht4/treasure/weapon" elementFormDefault="qualified" attributeFormDefault="qualified">
+	
+	<xs:complexType name="weaponsType">
+		<xs:sequence>
+			<xs:element name="sword" type="tns:weaponSword" maxOccurs="unbounded" />
+			<xs:element name="stick" type="tns:weaponStick" maxOccurs="unbounded" />
+			<xs:element name="mace" type="tns:weaponMace" maxOccurs="unbounded" />
+			<xs:element name="axe" type="tns:weaponAxe" maxOccurs="unbounded" />
+			<xs:element name="bow" type="tns:weaponBow" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="weaponType">
+		<xs:sequence>
+			<xs:element name="title" type="xs:string" />
+			<xs:element name="type" type="xs:string" />
+			<xs:element name="price" type="xs:double" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required" />
+	</xs:complexType>
+	<xs:complexType name="weaponSword">
+		<xs:complexContent>
+			<xs:extension base="tns:weaponType">
+				<xs:sequence>
+					<xs:element name="material" type="xs:string" />
+					<xs:element name="weight" type="xs:double" />
+					<xs:element name="length" type="xs:double" />
+					<xs:element name="thickness" type="xs:double" />
+					<xs:element name="damage" type="xs:double" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="weaponStick">
+		<xs:complexContent>
+			<xs:extension base="tns:weaponType">
+				<xs:sequence>
+					<xs:element name="length" type="xs:double" />
+					<xs:element name="tip" type="xs:string" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="weaponMace">
+		<xs:complexContent>
+			<xs:extension base="tns:weaponType">
+				<xs:sequence>
+					<xs:element name="size" type="xs:double" />
+					<xs:element name="damage" type="xs:double" />
+			</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="weaponAxe">
+		<xs:complexContent>
+			<xs:extension base="tns:weaponType">
+				<xs:sequence>
+					<xs:element name="type_handle" type="xs:string" />
+					<xs:element name="type_blade" type="xs:string" />
+					<xs:element name="damage" type="xs:double" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="weaponBow">
+		<xs:complexContent>
+			<xs:extension base="tns:weaponType">
+				<xs:sequence>
+					<xs:element name="size" type="xs:double" />
+					<xs:element name="arrow_type" type="xs:string" />
+					<xs:element name="arrow_count" type="xs:int" />
+					<xs:element name="damage" type="xs:double" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+		
+</xs:schema>
